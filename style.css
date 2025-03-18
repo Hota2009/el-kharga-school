@@ -1,0 +1,101 @@
+/* تحسين تجاوب Navbar */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 1.8rem;
+        color: white;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        display: none;
+        padding: 20px 0;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        display: block;
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+/* تحسين تجاوب قسم الهيرو */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero-video {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-content {
+        padding: 15px;
+    }
+}
+
+/* تحسين تجاوب معرض الصور */
+@media (max-width: 768px) {
+    .images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .images img {
+        width: 90%;
+        height: auto;
+    }
+}
+
+/* تحسين تجاوب أقسام المحتوى */
+@media (max-width: 768px) {
+    .section {
+        width: 90%;
+        padding: 30px;
+    }
+}
+
+/* تحسين تجاوب أزرار تحميل PDF */
+@media (max-width: 768px) {
+    .pdf-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pdf-box {
+        width: 80%;
+        text-align: center;
+    }
+}
+
+/* تحسين سلاسة تأثيرات التمرير */
+html {
+    scroll-snap-type: y mandatory;
+}
+
+.section {
+    scroll-snap-align: start;
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدرسة الخارجة الثانوية بنين</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- ناف بار -->
+    <nav class="navbar">
+        <div class="logo">الخارجة الثانوية بنين</div>
+        <div class="menu-toggle">☰</div>
+        <ul class="nav-links">
+            <li><a href="#about">عن المدرسة</a></li>
+            <li><a href="#activities">الأنشطة</a></li>
+            <li><a href="#gallery">معرض الصور</a></li>
+            <li><a href="#documents">الملفات المطلوبة</a></li>
+            <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+    </nav>
+    
+
+    <!-- هيرو سيكشن -->
+    <section class="hero">
+        <div class="wave wave-top"></div>
+        
+        <h1 class="school-title">مدرسة الخارجة الثانوية بنين</h1>
+        <p class="subtitle">الطريق إلى النجاح يبدأ من هنا</p>
+        <a href="#about" class="scroll-down">
+            <span></span>
+            <span></span>
+            <span></span>
+            <video autoplay loop muted playsinline class="hero-video">
+                <source src="videos/myvideo.mp4" type="video/mp4">
+                متصفحك لا يدعم تشغيل الفيديو.
+            </video>
+        </a>
+    </section>
+
+    <section id="about" class="section">
+        <h2>عن المدرسة</h2>
+        <p>مدرسة متميزة في تقديم التعليم الأكاديمي والأنشطة التي تساعد الطلاب على التطور.</p>
+    </section>
+
+    <section id="activities" class="section">
+        <h2>الأنشطة</h2>
+        <p>مزيج من الأنشطة الرياضية، الثقافية، والفنية لتنمية مهارات الطلاب.</p>
+        
+        <div class="activities-container">
+            <div class="activity-box achievement-box-main">
+                <h3><i class="fas fa-newspaper"></i> معرض الصحافة</h3>
+                <div class="activity-image">
+                    <img src="صحافة1.jpg" alt="معرض الصحافة">
+                </div>
+                <p>تحت قيادة الاستاذ/محمد ابراهيم خرفوش مدير ادارة المدرسة شاركت المدرسة اليوم بمعرض الصحافة الختامى بقاعة المركز الاستكشافى</p>
+                <p>يتوجه الاستاذ محمد ابراهيم خرفوش بكل الشكر لأسرة التحرير الاستاذ/ محمد سعد زايد والأستاذة / منال سيد على</p>
+                <button class="details-btn" onclick="openPopup('press-popup')"><i class="fas fa-plus-circle"></i> عرض التفاصيل</button>
+            </div>
+            
+            <div class="activity-box achievement-box-main">
+                <h3><i class="fas fa-trophy"></i> الاعلامي الصغير</h3>
+                <div class="activity-image">
+                    <img src="WhatsApp Image 2025-05-13 at 17.48.48_0d085d59.jpg" alt="الاعلامي الصغير">
+                </div>
+                <p>فوز المدرسة بالمركز الاول علي مستوي المديرية والتصفية علي مستوي الجمهورية في مسابقة الاعلامي الصغير (الطالب عمر احمد محمد)</p>
+                <p>مشرف الانشطة بالمدرسة: محمد سعد زايد</p>
+                <button class="details-btn" onclick="openPopup('media-popup')"><i class="fas fa-plus-circle"></i> عرض التفاصيل</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+        <h2>معرض الصور</h2>
+        <div class="images">
+            <img src="p1.jpg" alt="صورة 1">
+            <img src="p2.jpg" alt="صورة 2">
+            <img src="p3.jpg" alt="صورة 3">
+        </div>
+    </section>
+
+    <section id="documents" class="section">
+        <h2>الملفات المطلوبة للتسجيل</h2>
+        <p>للتسجيل في المدرسة، يرجى إحضار المستندات التالية:</p>
+        <ul>
+            <li><i class="fas fa-file-alt">  </i> شهادة ميلاد الطالب (أصل + صورة).</li>
+            <li><i class="fas fa-id-card">   </i> صورة من بطاقة ولي الأمر.</li>
+            <li><i class="fas fa-graduation-cap">   </i> شهادة إتمام المرحلة الإعدادية.</li>
+            <li><i class="fas fa-camera">   </i> عدد 4 صور شخصية للطالب.</li>
+        </ul>
+        <div class="pdf-container">
+            <a href="documents/registration_form.pdf" target="_blank" class="pdf-box">
+                <i class="fas fa-file-pdf"></i> استمارة التسجيل
+            </a>
+            <a href="documents/rules.pdf" target="_blank" class="pdf-box">
+                <i class="fas fa-file-pdf"></i> لائحة القبول والالتزام
+            </a>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>تواصل معنا</h2>
+        <p>إذا كان لديك أي استفسارات، يمكنك التواصل معنا عبر الوسائل التالية:</p>
+        <ul>
+            <li><i class="fas fa-map-marker-alt"></i> العنوان: حي الثانوية، الخارجة، الوادي الجديد.</li>
+            <li><i class="fas fa-phone-alt"></i> الهاتف: 092-xxxxxxx</li>
+            <li><i class="fas fa-envelope"></i> البريد الإلكتروني: info@school.com</li>
+        </ul>
+    </section>
+    <div class="wave wave-bottom"></div>
+    
+    <footer class="footer">
+        <div class="container">
+            <p class="copyright">© 2025 All Rights Reserved | Designed & Developed by <a href="https://wa.me/201155224461" class="whatsapp-link" target="_blank"><span class="designer">Ahmed Idris</span></a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- النوافذ المنبثقة للأنشطة -->
+    <!-- النافذة المنبثقة لمعرض الصحافة -->
+    <div id="press-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup" onclick="closePopup('press-popup')">&times;</span>
+            <h2><i class="fas fa-newspaper"></i> معرض الصحافة</h2>
+            <div class="popup-details">
+                <p>معرض الصحافة هو أحد الأنشطة المهمة في مدرسة الخارجة الثانوية بنين، حيث يتم فيه عرض إبداعات الطلاب في مجال الصحافة والإعلام وتسليط الضوء على مواهبهم وتنميتها.</p>
+                
+                <h3>معلومات عن معرض الصحافة</h3>
+                <ul>
+                    <li>أقيم المعرض بقاعة المركز الاستكشافي العلمي</li>
+                    <li>عرض الطلاب مجلات وصحف حائط من إنتاجهم</li>
+                    <li>مشاركة ركن خاص بالتحقيقات الصحفية التي أجراها الطلاب</li>
+                    <li>عرض للمقابلات الإذاعية والصحفية</li>
+                    <li>مسابقة لأفضل مجلة مدرسية</li>
+                </ul>
+                
+                <h3>فريق العمل</h3>
+                <p>يتقدم الأستاذ محمد إبراهيم خرفوش مدير إدارة المدرسة بخالص الشكر لأسرة التحرير:</p>
+                <ul>
+                    <li>الأستاذ/ محمد سعد زايد - مشرف النشاط الإعلامي</li>
+                    <li>الأستاذة/ منال سيد علي - مشرفة الصحافة المدرسية</li>
+                    <li>فريق الطلاب المشاركين في المعرض</li>
+                </ul>
+            </div>
+            
+            <h3>صور من المعرض</h3>
+            <div class="popup-gallery">
+                <div class="gallery-image"><img src="صحافة1.jpg" alt="معرض الصحافة 1"></div>
+                <div class="gallery-image"><img src="ورشة1.jpg" alt="معرض الصحافة 2"></div>
+                <div class="gallery-image"><img src="WhatsApp Image 2025-05-13 at 17.48.48_0d085d59.jpg" alt="معرض الصحافة 3"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- النافذة المنبثقة للإعلامي الصغير -->
+    <div id="media-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup" onclick="closePopup('media-popup')">&times;</span>
+            <h2><i class="fas fa-trophy"></i> الإعلامي الصغير</h2>
+            <div class="popup-details">
+                <p>تعتبر مسابقة الإعلامي الصغير من أهم المسابقات التي تقام على مستوى الجمهورية لاكتشاف وتنمية المواهب الإعلامية لدى طلاب المدارس، وقد حققت مدرستنا إنجازًا متميزًا في هذه المسابقة.</p>
+                
+                <h3>تفاصيل المسابقة</h3>
+                <ul>
+                    <li>مسابقة سنوية تنظمها وزارة التربية والتعليم</li>
+                    <li>تقام على مستويين: مستوى المديرية ومستوى الجمهورية</li>
+                    <li>تشمل مجالات متنوعة منها: التقديم الإذاعي، التحقيق الصحفي، الخبر الإعلامي</li>
+                    <li>تهدف إلى تنمية مهارات الطلاب الإعلامية واللغوية</li>
+                    <li>تشجع على متابعة الأحداث الجارية وتحليلها</li>
+                </ul>
+                
+                <h3>إنجاز مدرستنا</h3>
+                <ul>
+                    <li>حصول الطالب عمر أحمد محمد على المركز الأول على مستوى المديرية</li>
+                    <li>التأهل للتصفيات على مستوى الجمهورية</li>
+                    <li>تم تكريم الطالب والمشرف في حفل خاص بالمديرية</li>
+                </ul>
+
+                <h3>فريق العمل</h3>
+                <p>مشرف النشاط الإعلامي بالمدرسة: الأستاذ محمد سعد زايد</p>
+                <p>الطالب الفائز: عمر أحمد محمد - الصف الثاني الثانوي</p>
+            </div>
+            
+            <h3>صور من المسابقة</h3>
+            <div class="popup-gallery">
+                <div class="gallery-image"><img src="WhatsApp Image 2025-05-13 at 17.48.48_0d085d59.jpg" alt="الإعلامي الصغير 1"></div>
+                <div class="gallery-image"><img src="WhatsApp Image 2025-05-13 at 17.50.23_def1c502.jpg" alt="الإعلامي الصغير 2"></div>
+                <div class="gallery-image"><img src="WhatsApp Image 2025-05-13 at 17.50.24_f2963f56.jpg" alt="الإعلامي الصغير 3"></div>
+             </div>
+        </div>
+    </div>
+
+    <!-- النافذة المنبثقة للأنشطة الفنية -->
+    <div id="art-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup" onclick="closePopup('art-popup')">&times;</span>
+            <h2><i class="fas fa-paint-brush"></i> الأنشطة الفنية</h2>
+            <div class="popup-details">
+                <p>تهدف الأنشطة الفنية في مدرسة الخارجة الثانوية بنين إلى اكتشاف المواهب الفنية لدى الطلاب وتنميتها وإتاحة الفرصة لهم للتعبير عن مشاعرهم وأفكارهم بطرق إبداعية متنوعة.</p>
+                
+                <h3>البرامج الفنية</h3>
+                <ul>
+                    <li>ورش الرسم والفنون التشكيلية (أسبوعية)</li>
+                    <li>مسرح المدرسة (عروض فصلية)</li>
+                    <li>كورال المدرسة والفرقة الموسيقية</li>
+                    <li>ورش الخط العربي والزخرفة الإسلامية</li>
+                    <li>معرض فني سنوي لأعمال الطلاب</li>
+                </ul>
+            </div>
+            
+            <h3>الصور</h3>
+            <div class="popup-gallery">
+                <div class="gallery-image"><img src="ورشة1.jpg" alt="نشاط فني 1"></div>
+                <div class="gallery-image"><img src="صحافة1.jpg" alt="نشاط فني 2"></div>
+                <div class="gallery-image"><img src="WhatsApp Image 2025-05-13 at 17.48.48_0d085d59.jpg" alt="نشاط فني 3"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
